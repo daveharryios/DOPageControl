@@ -31,7 +31,7 @@ public class PageControl: UIControl, UIScrollViewDelegate {
     */
     @IBInspectable public var currentPage: Int = 0 {
         didSet {
-            placeAndPaintSelectionBar()
+           // placeAndPaintSelectionBar()
             
             if currentPage >= numberOfPages {
                 currentPage = numberOfPages - 1
@@ -82,7 +82,7 @@ public class PageControl: UIControl, UIScrollViewDelegate {
             for (idx, indicator) in indicatorsLayers.enumerate() {
                 indicator.fillColor = colorForIndicatorAtIndex(idx).CGColor
             }
-            placeAndPaintSelectionBar()
+           // placeAndPaintSelectionBar()
         }
     }
     
@@ -130,7 +130,7 @@ public class PageControl: UIControl, UIScrollViewDelegate {
         }
         
         updateSelectionBarSize()
-        placeAndPaintSelectionBar()
+       // placeAndPaintSelectionBar()
     }
     
     /**
